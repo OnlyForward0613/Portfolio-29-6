@@ -6,17 +6,10 @@
             till now.]]></description>
         <link>https://nim23.com</link>
         <generator>RSS for Node</generator>
-<<<<<<< Updated upstream
-        <lastBuildDate>Sat, 29 Jun 2024 21:36:46 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 29 Jun 2024 21:42:02 GMT</lastBuildDate>
         <atom:link href="https://nim23.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 29 Jun 2024 21:36:46 GMT</pubDate>
-        <copyright><![CDATA[All rights reserved 2024, Numan Ibn Mazid]]></copyright>
-=======
-        <lastBuildDate>Sat, 29 Jun 2024 21:26:08 GMT</lastBuildDate>
-        <atom:link href="https://nim23.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 29 Jun 2024 21:26:08 GMT</pubDate>
+        <pubDate>Sat, 29 Jun 2024 21:42:02 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2024, Davee Scott]]></copyright>
->>>>>>> Stashed changes
         <language><![CDATA[en]]></language>
     </channel>
 </rss>
