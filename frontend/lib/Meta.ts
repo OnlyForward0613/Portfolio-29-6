@@ -13,13 +13,13 @@
 //   const { currentURL } = useWindowLocation()
 
 //   const pageTitle = suffix ? `${title} - ${suffix}` : title
-//   const pageDescription = description ? description : "Numan Ibn Mazid's Portfolio Web Application"
+//   const pageDescription = description ? description : "Davee Scott's Portfolio Web Application"
 
 //   const pagePreviewImage = previewImage ? previewImage : '/images/numan.png'
 
 //   const defaultKeywords = [
 //     'Numan',
-//     'Numan Ibn Mazid',
+//     'Davee Scott',
 //     'numanibnmazid',
 //     'nmn',
 //     'nim23',
@@ -63,7 +63,7 @@
 //     // Others
 //     generator: 'Next.js',
 //     applicationName: 'NIM23',
-//     authors: [{ name: 'Numan Ibn Mazid', url: 'https://www.linkedin.com/in/numanibnmazid/' }],
+//     authors: [{ name: 'Davee Scott', url: 'https://www.linkedin.com/in/numanibnmazid/' }],
 //     referrer: 'origin-when-cross-origin',
 //     viewport: {
 //       width: 'device-width',
@@ -91,11 +91,11 @@
 //       description: pageDescription,
 //       url: currentURL,
 //       siteName: 'NIM23',
-//       authors: ['Numan Ibn Mazid'],
+//       authors: ['Davee Scott'],
 //       images: [
 //         {
 //           url: pagePreviewImage,
-//           alt: pageTitle ? pageTitle : 'nim23.com || Numan Ibn Mazid',
+//           alt: pageTitle ? pageTitle : 'nim23.com || Davee Scott',
 //           // width: 800,
 //           // height: 600,
 //         },
@@ -110,7 +110,7 @@
 //       images: [
 //         {
 //           url: pagePreviewImage,
-//           alt: pageTitle ? pageTitle : 'nim23.com || Numan Ibn Mazid',
+//           alt: pageTitle ? pageTitle : 'nim23.com || Davee Scott',
 //           // width: 800,
 //           // height: 600,
 //         },

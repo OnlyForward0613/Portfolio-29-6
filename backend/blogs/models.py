@@ -54,7 +54,7 @@ class Blog(models.Model):
     image = models.ImageField(upload_to=get_blog_image_path, blank=True, null=True)
     overview = models.TextField(max_length=500, blank=True, null=True)
     content = models.TextField()
-    author = models.CharField(max_length=100, default="Numan Ibn Mazid", blank=True)
+    author = models.CharField(max_length=100, default="Davee Scott", blank=True)
     tags = models.CharField(max_length=255, blank=True, null=True)
     status = models.CharField(max_length=20, choices=Status.choices, default=Status.PUBLISHED)
     order = models.PositiveIntegerField(blank=True)

@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "nim23.com"
 version = "0.1.0"
-description = "Portfolio web application of Numan Ibn Mazid"
-authors = ["Numan Ibn Mazid <numanibnmazid@gmail.com>"]
+description = "Portfolio web application of Davee Scott"
+authors = ["Davee Scott <daveescott0509@gmail.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]

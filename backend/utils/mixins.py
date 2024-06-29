@@ -15,7 +15,7 @@ class CustomModelAdminMixin(object):
     """
     DOCSTRING for CustomModelAdminMixin:
     This model mixing automatically displays all fields of a model in admin panel following the criteria.
-    code: @ Numan Ibn Mazid
+    code: @ Davee Scott
     """
 
     def __init__(self, model, admin_site):

@@ -9,7 +9,7 @@ export default async function getRSS() {
 
   // Create a new RSS object
   const feed = new RSS({
-    title: "Numan Ibn Mazid",
+    title: "Davee Scott",
     description: `I've been writing online since 2021, mostly about web development
             and tech careers. In total, I've written ${allBlogs.length} articles
             till now.`,
@@ -17,7 +17,7 @@ export default async function getRSS() {
     feed_url: `${siteURL}/feed.xml`,
     language: "en",
     pubDate: new Date(),
-    copyright: `All rights reserved ${new Date().getFullYear()}, Numan Ibn Mazid`,
+    copyright: `All rights reserved ${new Date().getFullYear()}, Davee Scott`,
   });
 
   // Add all blog posts to the RSS feed

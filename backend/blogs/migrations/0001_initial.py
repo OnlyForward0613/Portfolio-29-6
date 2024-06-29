@@ -22,7 +22,7 @@ class Migration(migrations.Migration):
                 ('image', models.ImageField(blank=True, null=True, upload_to=utils.image_upload_helpers.get_blog_image_path)),
                 ('overview', models.TextField(blank=True, max_length=500, null=True)),
                 ('content', models.TextField()),
-                ('author', models.CharField(blank=True, default='Numan Ibn Mazid', max_length=100)),
+                ('author', models.CharField(blank=True, default='Davee Scott', max_length=100)),
                 ('tags', models.CharField(blank=True, max_length=255, null=True)),
                 ('status', models.CharField(choices=[('Published', 'Published'), ('Draft', 'Draft'), ('Archived', 'Archived')], default='Published', max_length=20)),
                 ('order', models.PositiveIntegerField(blank=True)),
