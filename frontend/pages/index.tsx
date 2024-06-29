@@ -18,6 +18,7 @@ import { ProfileType, ExperienceType } from '@lib/types'
 import { BsGithub, BsLinkedin, BsTwitter, BsFacebook } from 'react-icons/bs'
 import Loader from '@components/Loader'
 import NoData from "@components/NoData"
+import Experience from '@content/Experience'
 import dynamic from 'next/dynamic'
 import { useClientID } from '@context/clientIdContext'
 
@@ -68,7 +69,7 @@ export default function Home() {
     fetchBlogs()
   }, [])
 
-  const latest_experience: ExperienceType = experiences
+  const latest_experience: ExperienceType = Experience[0]
 
   return (
     <>
@@ -206,9 +207,8 @@ export default function Home() {
             </div>
 
             {/* Resume Download Button */}
-            {profileInfo?.resume_link && (
               <Link
-                href={profileInfo?.resume_link || '#'}
+                href={'https://drive.google.com/file/d/1gE0HAqNyah08KKyNlPji0PeAusMRFe4Y/view?usp=sharing'}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-5 py-2 transition-transform border border-gray-500 rounded-md outline-none select-none dark:border-gray-400 hover:bg-white dark:hover:bg-neutral-800 active:scale-95"
@@ -216,20 +216,19 @@ export default function Home() {
                 <FiDownload />
                 <p>Resume</p>
               </Link>
-            )}
           </div>
         </motion.section>
 
         <div>
           {/* Experiences */}
           <HomeHeading title="Work Experiences" />
-          {/* {experiencesLoading ? (
+          {experiencesLoading ? (
             <Loader />
-          ) : experiences.length > 0 ? (
-            <ExperienceSection experiences={experiences} showHomeHeading={false} />
+          ) : Experience.length > 0 ? (
+            <ExperienceSection experiences={Experience} showHomeHeading={false} />
           ) : (
             <NoData />
-          )} */}
+          )}
 
           {/* Blogs */}
           <HomeHeading title="Blogs" />
