@@ -53,8 +53,8 @@ export function TimelineItem({
                     <Image
                       src={company_image}
                       className="rounded-full shadow filter"
-                      width={60}
-                      height={60}
+                      width={25}
+                      height={25}
                       alt={company}
                       quality={50}
                     />
