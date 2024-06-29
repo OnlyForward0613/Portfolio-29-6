@@ -7,12 +7,12 @@ const socialMedia: SocialPlatform[] = [
   {
     title: "LinkedIn",
     Icon: BsLinkedin,
-    url: "https://www.linkedin.com/in/numanibnmazid/",
+    url: "https://www.linkedin.com/in/davee-scott",
   },
   {
     title: "Github",
     Icon: BsGithub,
-    url: "https://github.com/NumanIbnMazid",
+    url: "https://github.com/OnlyForward0613",
   },
   {
     title: "Instagram",
@@ -32,7 +32,7 @@ const socialMedia: SocialPlatform[] = [
   {
     title: "Mail",
     Icon: HiMail,
-    url: "mailto:numanibnmazid@gmail.com",
+    url: "mailto:daveescott0509@gmail.com",
   },
 ]
 

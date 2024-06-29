@@ -1,15 +1,15 @@
 import { PageMeta } from "@lib/types"
 
-const myImage = "https://i.postimg.cc/pV6bX2rY/numan.jpg"
+const myImage = "/images/davee.jpg"
 const blogImage = "https://i.postimg.cc/dVQkjgxp/blog.png"
 
 
 const pageMeta: PageMeta = {
   home: {
-    title: "NIM23",
-    description: "Hey, I am Numan Ibn Mazid. I'm a Software Engineer who enjoys developing innovative software solutions that are tailored to customer desirability and usability.",
+    title: "Davee Scott",
+    description: "Hey, I am Davee Scott. I'm a Senior Blockchain and Full stack Engineer who enjoys developing innovative software solutions that are tailored to customer desirability and usability.",
     image: myImage,
-    keywords: "Numan Ibn Mazid's Portfolio, numan's blog, top blog sites, top 10 blog sites, best blog sites, best portfolio template, best programming blogs",
+    keywords: "Davee Scott's Portfolio, davee's blog, top blog sites, top 10 blog sites, best blog sites, best portfolio template, best programming blogs",
   },
 
   stats: {
@@ -38,7 +38,7 @@ const pageMeta: PageMeta = {
   },
   about: {
     title: "About",
-    description: "Hey, I am Numan Ibn Mazid. Experienced professional Software Engineer who enjoys developing innovative software solutions that are tailored to customer desirability and usability.",
+    description: "Hey, I am Davee Scott. Experienced professional Software Engineer who enjoys developing innovative software solutions that are tailored to customer desirability and usability.",
     image: myImage,
     keywords: "about, about me, about numan, who is numan, mazid, about mazid, portfolio about page",
   },

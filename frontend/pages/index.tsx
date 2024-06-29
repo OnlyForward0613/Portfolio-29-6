@@ -68,12 +68,12 @@ export default function Home() {
     fetchBlogs()
   }, [])
 
-  const latest_experience: ExperienceType = experiences[0]
+  const latest_experience: ExperienceType = experiences
 
   return (
     <>
       <Metadata
-        title="Numan Ibn Mazid's Portfolio"
+        title="Davee Scott's Portfolio"
         description={pageMeta.home.description}
         previewImage={pageMeta.home.image}
         keywords={pageMeta.home.keywords}
@@ -96,7 +96,7 @@ export default function Home() {
                 className="rounded-full shadow filter"
                 width={933}
                 height={933}
-                alt="Numan Ibn Mazid's Profile Image"
+                alt="Davee Scott's Profile Image"
                 quality={60}
                 // priority
               />
@@ -137,13 +137,13 @@ export default function Home() {
                 className="text-[#474747] dark:text-gray-300 font-small font-light text-sm md:text-base text-center"
               >
                 {/* Address */}
-                <div>Address: {profileInfo?.address || 'Dhaka, Bangladesh'}</div>
+                <div>Address: {'MD, Brandwine, USA'}</div>
                 {/* Email */}
                 <div className="mt-2">
                   <span>Email: </span>
                   <span className="text-sky-800 dark:text-sky-400">
-                    <a href={`mailto:${profileInfo?.contact_email || 'numanibnmazid@gmail.com'}`}>
-                      {profileInfo?.contact_email || 'numanibnmazid@gmail.com'}
+                    <a href='daveescott0509@gmail.com'>
+                      {'daveescott0509@gmail.com'}
                     </a>
                   </span>
                 </div>
@@ -151,8 +151,8 @@ export default function Home() {
                 <div className="mt-2">
                   <span>Contact: </span>
                   <span className="text-sky-800 dark:text-sky-400">
-                    <a href={`tel:${profileInfo?.contact || '+880 1685238317'}`}>
-                      {profileInfo?.contact || '+880 1685238317'}
+                    <a href={`tel:${profileInfo?.contact || '+1 5752238602'}`}>
+                      {profileInfo?.contact || '+1 5752238602'}
                     </a>
                   </span>
                 </div>
@@ -202,23 +202,23 @@ export default function Home() {
         <div>
           {/* Experiences */}
           <HomeHeading title="Work Experiences" />
-          {experiencesLoading ? (
+          {/* {experiencesLoading ? (
             <Loader />
           ) : experiences.length > 0 ? (
             <ExperienceSection experiences={experiences} showHomeHeading={false} />
           ) : (
             <NoData />
-          )}
+          )} */}
 
           {/* Blogs */}
           <HomeHeading title="Blogs" />
-          {blogsLoading ? (
+          {/* {blogsLoading ? (
             <Loader />
           ) : blogs.length > 0 ? (
             <BlogsSection blogs={blogs} showHomeHeading={false} />
           ) : (
             <NoData />
-          )}
+          )} */}
 
           {/* Contact Section */}
           <Contact />

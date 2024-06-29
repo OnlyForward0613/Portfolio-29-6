@@ -41,6 +41,6 @@ The **Contact** page offers a means to get in touch with me. Whether you're inte
 
 ## Get in Touch
 - Website: [nim23.com](https://nim23.com/)
-- GitHub: [github.com/NumanIbnMazid](https://github.com/NumanIbnMazid/)
-- Email: [numanibnmazid@gmail.com](mailto:numanibnmazid@gmail.com)
-- Linkedin: [Numan Ibn Mazid](https://www.linkedin.com/in/numanibnmazid/).
+- GitHub: [github.com/OnlyForward0613](https://github.com/OnlyForward0613/)
+- Email: [daveescott0509@gmail.com](mailto:daveescott0509@gmail.com)
+- Linkedin: [Davee Scott](https://www.linkedin.com/in/davee-scott).
