@@ -15,7 +15,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { getProfileInfo, getAllExperiences, getAllBlogs } from '@lib/backendAPI'
 import { ProfileType, ExperienceType } from '@lib/types'
-import { BsGithub, BsLinkedin } from 'react-icons/bs'
+import { BsGithub, BsLinkedin, BsTwitter, BsFacebook } from 'react-icons/bs'
 import Loader from '@components/Loader'
 import NoData from "@components/NoData"
 import dynamic from 'next/dynamic'
@@ -98,7 +98,7 @@ export default function Home() {
                 height={933}
                 alt="Davee Scott's Profile Image"
                 quality={60}
-                // priority
+              // priority
               />
             </motion.div>
 
@@ -160,27 +160,48 @@ export default function Home() {
 
               <motion.div variants={opacityVariant} className="flex items-center justify-center gap-2 mt-4">
                 {/* LinkedIn */}
-                {profileInfo?.linkedin && (
-                  <div className="w-6 h-6 mt-2 mr-2">
-                    <Link
-                      href={profileInfo.linkedin}
-                      title="LinkedIn Profile"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <BsLinkedin className="w-full h-full transition-all hover:scale-110 active:scale-90" />
-                    </Link>
-                  </div>
-                )}
+                <div className="w-6 h-6 mt-2 mr-2">
+                  <Link
+                    href={"https://www.linkedin.com/in/davee-scott"}
+                    title="LinkedIn Profile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <BsLinkedin className="w-full h-full transition-all hover:scale-110 active:scale-90" />
+                  </Link>
+                </div>
 
                 {/* Github */}
-                {profileInfo?.github && (
-                  <div className="w-6 h-6 mt-2 mr-2">
-                    <Link href={profileInfo.github} title="GitHub Profile" target="_blank" rel="noopener noreferrer">
-                      <BsGithub className="w-full h-full transition-all hover:scale-110 active:scale-90" />
-                    </Link>
-                  </div>
-                )}
+                <div className="w-6 h-6 mt-2 mr-2">
+                  <Link href={"https://github.com/OnlyForward0613"} title="GitHub Profile" target="_blank" rel="noopener noreferrer">
+                    <BsGithub className="w-full h-full transition-all hover:scale-110 active:scale-90" />
+                  </Link>
+                </div>
+
+                {/* Twitter */}
+                <div className="w-6 h-6 mt-2 mr-2">
+                  <Link
+                    href={"https://x.com/DaveeScott22"}
+                    title="Twitter Profile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <BsTwitter className="w-full h-full transition-all hover:scale-110 active:scale-90" />
+                  </Link>
+                </div>
+
+                {/* Facebook */}
+                <div className="w-6 h-6 mt-2 mr-2">
+                  <Link
+                    href={"https://www.facebook.com/profile.php?id=61561446326312&mibextid=ZbWKwL"}
+                    title="Facebook Profile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <BsFacebook className="w-full h-full transition-all hover:scale-110 active:scale-90" />
+                  </Link>
+                </div>
+
               </motion.div>
             </div>
 
