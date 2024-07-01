@@ -38,7 +38,7 @@ export default function Newsletter() {
       <div>
         <h3 className="my-0 text-sm tracking-wider uppercase font-bold">Newsletter</h3>
         <p className="mt-4 text-base ">
-          Subscribe to nim23's Newsletter for professional insights, industry trends, and valuable tips. Join now (Spam Free)!
+          Subscribe to daveescott's Newsletter for professional insights, industry trends, and valuable tips. Join now (Spam Free)!
         </p>
         <form className="relative flex my-4 space-y-0" onSubmit={subscribeNewsLetter}>
           <label htmlFor="email-address" className="sr-only">
