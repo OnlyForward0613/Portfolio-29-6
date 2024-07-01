@@ -13,14 +13,14 @@ import staticData from '@content/StaticData'
 import React from 'react'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import { getProfileInfo, getAllExperiences, getAllBlogs } from '@lib/backendAPI'
+import { getProfileInfo } from '@lib/backendAPI'
 import { ProfileType, ExperienceType } from '@lib/types'
 import { BsGithub, BsLinkedin, BsTwitter, BsFacebook } from 'react-icons/bs'
 import Loader from '@components/Loader'
 import NoData from "@components/NoData"
-import Experience from '@content/Experience'
+import Experience from '@content/Experience';
+import Blogs from '@content/Blogs';
 import dynamic from 'next/dynamic'
-import { useClientID } from '@context/clientIdContext'
 
 const ExperienceSection = dynamic(() => import('@components/Home/ExperienceSection'), {
   loading: () => <Loader />,
@@ -40,23 +40,6 @@ export default function Home() {
   const [blogsLoading, setBlogsLoading] = useState(true)
 
   const [profileInfo, setProfileInfo] = useState<ProfileType>()
-  const [experiences, setExperiences] = useState<ExperienceType[]>([])
-  const [blogs, setBlogs] = useState([])
-
-  const { clientID } = useClientID()
-
-  const fetchExperiences = async () => {
-    const experiencesData: ExperienceType[] = await getAllExperiences(1)
-    setExperiences(experiencesData)
-    setExperiencesLoading(false)
-  }
-
-  const fetchBlogs = async () => {
-    if (!clientID) return
-    const blogsData = await getAllBlogs(clientID, 2)
-    setBlogs(blogsData)
-    setBlogsLoading(false)
-  }
 
   const fetchProfileInfo = async () => {
     const profileData: ProfileType = await getProfileInfo()
@@ -65,8 +48,12 @@ export default function Home() {
 
   useEffect(() => {
     fetchProfileInfo()
-    fetchExperiences()
-    fetchBlogs()
+    if (Blogs.length) {
+      setBlogsLoading(false);
+    }
+    if (Experience.length) {
+      setExperiencesLoading(false);
+    }
   }, [])
 
   const latest_experience: ExperienceType = Experience[0]
@@ -117,7 +104,7 @@ export default function Home() {
                 >
                   <span>{latest_experience?.designation || staticData.personal.current_designation}</span>
                   <span className="text-xs md:text-sm lg:text-xl mx-2 italic">at</span>
-                  <span>{latest_experience?.company || staticData.personal.current_company}</span>
+                  <span>{"Digital World"}</span>
                 </motion.p>
               </div>
 
@@ -232,13 +219,13 @@ export default function Home() {
 
           {/* Blogs */}
           <HomeHeading title="Blogs" />
-          {/* {blogsLoading ? (
+          {blogsLoading ? (
             <Loader />
-          ) : blogs.length > 0 ? (
-            <BlogsSection blogs={blogs} showHomeHeading={false} />
+          ) : Blogs.length > 0 ? (
+            <BlogsSection blogs={Blogs} showHomeHeading={false} />
           ) : (
             <NoData />
-          )} */}
+          )}
 
           {/* Contact Section */}
           <Contact />
