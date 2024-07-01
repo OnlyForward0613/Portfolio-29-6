@@ -48,13 +48,13 @@ export function TimelineItem({
 
             {company_image ? (
               <div className="mt-2">
-                {company_url ? (
+                {company_url && company_url !== "https://www.xion.finance/" ? (
                   <a className="p-0 m-0" href={company_url} target="_blank" rel="noreferrer">
                     <Image
                       src={company_image}
                       className="rounded-full shadow filter"
-                      width={25}
-                      height={25}
+                      width={35}
+                      height={35}
                       alt={company}
                       quality={50}
                     />
@@ -65,8 +65,8 @@ export function TimelineItem({
                     <Image
                       src={company_image}
                       className="rounded-full shadow filter"
-                      width={70}
-                      height={70}
+                      width={80}
+                      height={80}
                       alt={company}
                       quality={100}
                     />
