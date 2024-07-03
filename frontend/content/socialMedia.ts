@@ -22,7 +22,7 @@ const socialMedia: SocialPlatform[] = [
   {
     title: "Facebook",
     Icon: BsFacebook,
-    url: "https://www.facebook.com/NumanIbnMazid/",
+    url: "https://www.facebook.com/profile.php?id=61561446326312&mibextid=ZbWKwL",
   },
   {
     title: "YouTube",
