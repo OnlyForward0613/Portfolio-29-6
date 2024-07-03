@@ -34,8 +34,8 @@ const Blogs = [
         //         heading: "What is a block?"
         //     }
         // ],
-        total_views: 1200,
-        total_likes: 1100,
+        total_views: 1204,
+        total_likes: 1102,
         user_liked: true,
         created_at: "May 29, 2023",
         updated_at: "May 29, 2023",
@@ -69,8 +69,8 @@ const Blogs = [
         //         heading: "What is a block?"
         //     }
         // ],
-        total_views: 1200,
-        total_likes: 1100,
+        total_views: 2311,
+        total_likes: 914,
         user_liked: true,
         created_at: "May 29, 2023",
         updated_at: "May 29, 2023",
@@ -104,8 +104,8 @@ const Blogs = [
         //         heading: "What is a block?"
         //     }
         // ],
-        total_views: 1200,
-        total_likes: 1100,
+        total_views: 768,
+        total_likes: 324,
         user_liked: true,
         created_at: "Dec 23, 2021",
         updated_at: "Dec 23, 2021",
