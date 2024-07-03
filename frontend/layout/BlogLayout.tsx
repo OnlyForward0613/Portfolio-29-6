@@ -36,7 +36,7 @@ export default function BlogLayout({
   const [fakeTotalLikes, setFakeTotalLikes] = useState<number>(blog.total_likes)
   const [fakeLikeStatus, setFakeLikeStatus] = useState<boolean>(blog.user_liked)
   const [totalViews, setTotalViews] = useState<number>(blog.total_views)
-  const BLOG_ENDPOINT = 'https://nim23.com' + '/blogs/' + blog.slug
+  const BLOG_ENDPOINT = 'https://daveescott0509.com' + '/blogs/' + blog.slug
 
   const { clientID } = useClientID()
 

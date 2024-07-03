@@ -26,6 +26,7 @@ import AnimatedHeading from '@components/FramerMotion/AnimatedHeading'
 import { headingFromLeft } from '@content/FramerMotionVariants'
 import dynamic from 'next/dynamic'
 import Experience from "@content/Experience"
+import Skills from "@content/Skills"
 
 const SkillSection = dynamic(() => import('@components/Home/SkillSection'), {
   loading: () => <Loader />,
@@ -137,13 +138,13 @@ export default function About({
 
             {/* Skills */}
             <HomeHeading title="Skills" />
-            {/* {skillsLoading ? (
+            {skillsLoading ? (
               <Loader />
-            ) : skills.length > 0 ? (
-              <SkillSection skills={skills} showHomeHeading={false} />
+            ) : Skills.length > 0 ? (
+              <SkillSection skills={Skills} showHomeHeading={false} />
             ) : (
               <NoData />
-            )} */}
+            )}
 
             {/* Educations */}
             <HomeHeading title="Educations" />

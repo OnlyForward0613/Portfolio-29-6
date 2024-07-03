@@ -39,7 +39,7 @@ export default function MetaData({
       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="description" content={description || "Davee Scott's Portfolio Web Application"} />
-      <title>{title + (suffix ? ` - ${suffix}` : '') + ' | NIM23'}</title>
+      <title>{title + (suffix ? ` - ${suffix}` : '') + ' | daveescott0509'}</title>
       <meta name="theme-color" content="#000" />
       <link rel="shortcut icon" href={faviconHref} sizes="any" />
       <link rel="manifest" href="/manifest.json" />
@@ -62,10 +62,10 @@ export default function MetaData({
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content="@NumanIbnMazid" />
-      <meta name="twitter:title" content={`${title}${suffix ? ` - ${suffix}` : ''} | NIM23`} />
+      <meta name="twitter:title" content={`${title}${suffix ? ` - ${suffix}` : ''} | daveescott0509`} />
       <meta name="twitter:description" content={description || "Davee Scott's Portfolio Application"} />
       <meta name="twitter:image" content={previewImage || '/images/davee.jpg'} />
-      <meta name="twitter:image:alt" content={title || 'nim23.com'}></meta>
+      <meta name="twitter:image:alt" content={title || 'daveescott0509.com'}></meta>
       <meta name="twitter:domain" content={currentURL} />
     </Head>
   )

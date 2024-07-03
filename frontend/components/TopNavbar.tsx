@@ -94,7 +94,7 @@ export default function TopNavbar() {
             // className="font-sarina"
             className="font-bold"
           >
-            nim23.com
+            daveescott0509.com
           </motion.p>
         </div>
       </Link>

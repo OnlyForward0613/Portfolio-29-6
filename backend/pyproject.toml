@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "nim23.com"
+name = "daveescott0509.com"
 version = "0.1.0"
 description = "Portfolio web application of Davee Scott"
 authors = ["Davee Scott <daveescott0509@gmail.com>"]

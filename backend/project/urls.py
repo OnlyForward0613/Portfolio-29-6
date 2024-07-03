@@ -31,9 +31,9 @@ from utils.decorators import authenticated_user_required
 # Yet Another Swagger Schema View
 schema_view = get_schema_view(
     openapi.Info(
-        title="`nim23.com` Backend API",
+        title="`daveescott0509.com` Backend API",
         default_version="v1",
-        description="API Documentation for `nim23.com`",
+        description="API Documentation for `daveescott0509.com`",
         terms_of_service="https://www.google.com/policies/terms/",
         contact=openapi.Contact(email="daveescott0509@gmail.com"),
         license=openapi.License(name="BSD License"),

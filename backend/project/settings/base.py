@@ -1,5 +1,5 @@
 # ----------------------------------------------------
-# *** nim23.com - Davee Scott's Portfolio Project's Backend Settings ***
+# *** daveescott0509.com - Davee Scott's Portfolio Project's Backend Settings ***
 # ----------------------------------------------------
 from pathlib import Path
 import os

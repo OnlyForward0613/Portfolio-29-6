@@ -4,7 +4,7 @@ from project.settings.base import *
 # *** Allowed Hosts ***
 # ----------------------------------------------------
 ALLOWED_HOSTS = [
-    "nim23.com",  # Frontend Host
+    "daveescott0509.com",  # Frontend Host
 ]
 
 # ----------------------------------------------------
@@ -41,8 +41,8 @@ SECURE_HSTS_PRELOAD = True
 # Neededf for CorsHeader
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = [
-    "https://nim23.com",
-    "https://www.nim23.com",
+    "https://daveescott0509.com",
+    "https://www.daveescott0509.com",
 ]
 CORS_ALLOW_HEADERS = [
     'accept',
@@ -68,8 +68,8 @@ CORS_ALLOW_METHODS = [
 # ----------------------------------------------------
 # *** Site Info ***
 # ----------------------------------------------------
-BACKEND_BASE_URL = "https://nim23.com/backend"
-FRONTEND_BASE_URL = "https://nim23.com"
+BACKEND_BASE_URL = "https://daveescott0509.com/backend"
+FRONTEND_BASE_URL = "https://daveescott0509.com"
 
 # ----------------------------------------------------
 # *** Other Definitions ***
