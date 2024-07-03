@@ -4,8 +4,8 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "name": "NIM23",
-  "short_name": "NIM23",
+  "name": "daveescott0509",
+  "short_name": "daveescott0509",
   "description": "This is my portfolio application which you can install as a Progressive Web app.",
   "icons": [
     {

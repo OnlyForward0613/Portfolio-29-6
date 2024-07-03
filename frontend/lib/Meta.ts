@@ -22,8 +22,8 @@
 //     'Davee Scott',
 //     'numanibnmazid',
 //     'nmn',
-//     'nim23',
-//     'nim23.com',
+//     'daveescott0509',
+//     'daveescott0509.com',
 //     'numan blog',
 //     'blog application',
 //     'portfolio application',
@@ -62,7 +62,7 @@
 //     },
 //     // Others
 //     generator: 'Next.js',
-//     applicationName: 'NIM23',
+//     applicationName: 'daveescott0509',
 //     authors: [{ name: 'Davee Scott', url: 'https://www.linkedin.com/in/numanibnmazid/' }],
 //     referrer: 'origin-when-cross-origin',
 //     viewport: {
@@ -90,12 +90,12 @@
 //       title: pageTitle,
 //       description: pageDescription,
 //       url: currentURL,
-//       siteName: 'NIM23',
+//       siteName: 'daveescott0509',
 //       authors: ['Davee Scott'],
 //       images: [
 //         {
 //           url: pagePreviewImage,
-//           alt: pageTitle ? pageTitle : 'nim23.com || Davee Scott',
+//           alt: pageTitle ? pageTitle : 'daveescott0509.com || Davee Scott',
 //           // width: 800,
 //           // height: 600,
 //         },
@@ -110,7 +110,7 @@
 //       images: [
 //         {
 //           url: pagePreviewImage,
-//           alt: pageTitle ? pageTitle : 'nim23.com || Davee Scott',
+//           alt: pageTitle ? pageTitle : 'daveescott0509.com || Davee Scott',
 //           // width: 800,
 //           // height: 600,
 //         },

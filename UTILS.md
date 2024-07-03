@@ -17,7 +17,7 @@
 ```json
 {
     "eslint.options": {
-      "configFile": "/home/numan/Workspace/PERSONAL/PROJECTS/nim23/frontend/.eslintrc.json"
+      "configFile": "/home/numan/Workspace/PERSONAL/PROJECTS/daveescott0509/frontend/.eslintrc.json"
     }
 }
 

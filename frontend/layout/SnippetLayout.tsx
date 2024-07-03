@@ -27,7 +27,7 @@ export default function SnippetLayout({
   const [fakeTotalLikes, setFakeTotalLikes] = useState<number>(code_snippet.total_likes)
   const [fakeLikeStatus, setFakeLikeStatus] = useState<boolean>(code_snippet.user_liked)
   const [totalViews, setTotalViews] = useState<number>(code_snippet.total_views)
-  const SNIPPET_ENDPOINT = 'https://nim23.com' + '/snippets/' + code_snippet.slug
+  const SNIPPET_ENDPOINT = 'https://daveescott0509.com' + '/snippets/' + code_snippet.slug
 
   const { clientID } = useClientID()
 

@@ -4,7 +4,7 @@ import MDXContent from "./MDXContent";
 import RSS from "rss";
 
 export default async function getRSS() {
-  const siteURL = "https://nim23.com";
+  const siteURL = "https://daveescott0509.com";
   const allBlogs = new MDXContent("posts").getAllPosts();
 
   // Create a new RSS object

@@ -51,7 +51,7 @@
   - (DONE) Auto remove unused files (media) from backend.
   - (DONE) Fix Page Title (browser tab title).
   - (DONE) Fix Blog Details Page Content Width.
-  - (DONE) Fix Contact Page's Mail Sending. Mail sending not working in live and change the mail to nim23.official.
+  - (DONE) Fix Contact Page's Mail Sending. Mail sending not working in live and change the mail to daveescott0509.official.
   - (DONE) FIx Newsletter subscription message.
   - (DONE) Replace `autoSlugWithFieldAndUUID` to `autoslugFromField` in backend models like blog, project etc.
   - (DONE) Fix Order Null Violation. Interests section is working on Server.

@@ -251,7 +251,7 @@ SWAGGER_SETTINGS = {
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',  # frontend URL here
-    'http://nim23.com'
+    'http://daveescott0509.com'
 ]
 
 CORS_ALLOW_METHODS = [

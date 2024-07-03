@@ -1,6 +1,6 @@
 {
-  "name": "nim23.com-frontend",
-  "homepage": "https://nim23.com",
+  "name": "daveescott0509.com-frontend",
+  "homepage": "https://daveescott0509.com",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
@@ -67,13 +67,13 @@
     "@mdx-js/mdx": "2.3.0",
     "@mdx-js/react": "2.3.0"
   },
-  "description": "Frontend Application of nim23.com",
+  "description": "Frontend Application of daveescott0509.com",
   "main": "server.js",
   "directories": {
     "lib": "lib"
   },
   "keywords": [
-    "nim23.com",
+    "daveescott0509.com",
     "daveescott",
     "davee",
     "portfolio",
