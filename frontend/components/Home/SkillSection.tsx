@@ -54,11 +54,6 @@ export default function SkillSection({ skills, showHomeHeading = true }: { skill
                     {skill.title}
                   </p>
                 </div>
-                {skill.level !== null ? (
-                  <div className="w-full h-1 bg-gray-300 rounded-full my-2 dark:bg-gray-400">
-                    <div className="h-full bg-cyan-700 rounded-full dark:bg-cyan-800" style={progressBarStyle} />
-                  </div>
-                ) : null}
               </motion.div>
             )
           })}
