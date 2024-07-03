@@ -25,6 +25,7 @@ import { HomeHeading } from '../pages'
 import AnimatedHeading from '@components/FramerMotion/AnimatedHeading'
 import { headingFromLeft } from '@content/FramerMotionVariants'
 import dynamic from 'next/dynamic'
+import Experience from "@content/Experience"
 
 const SkillSection = dynamic(() => import('@components/Home/SkillSection'), {
   loading: () => <Loader />,
@@ -123,56 +124,56 @@ export default function About({
             >
               <span className="mr-2">Work Experiences</span>
               <span className="px-2 py-1 text-xs font-bold text-white bg-blue-500 rounded-full">
-                {experiences.length}
+                {Experience.length}
               </span>
             </AnimatedHeading>
             {experiencesLoading ? (
               <Loader />
-            ) : experiences.length > 0 ? (
-              <ExperienceSection experiences={experiences} showHomeHeading={false} />
+            ) : Experience.length > 0 ? (
+              <ExperienceSection experiences={Experience} showHomeHeading={false} />
             ) : (
               <NoData />
             )}
 
             {/* Skills */}
             <HomeHeading title="Skills" />
-            {skillsLoading ? (
+            {/* {skillsLoading ? (
               <Loader />
             ) : skills.length > 0 ? (
               <SkillSection skills={skills} showHomeHeading={false} />
             ) : (
               <NoData />
-            )}
+            )} */}
 
             {/* Educations */}
             <HomeHeading title="Educations" />
-            {educationsLoading ? (
+            {/* {educationsLoading ? (
               <Loader />
             ) : educations.length > 0 ? (
               <Education educations={educations} showHomeHeading={false} />
             ) : (
               <NoData />
-            )}
+            )} */}
 
             {/* Certificates */}
             <HomeHeading title="Certificates" />
-            {certificatesLoading ? (
+            {/* {certificatesLoading ? (
               <Loader />
             ) : certificates.length > 0 ? (
               <Certificates certificates={certificates} showHomeHeading={false} />
             ) : (
               <NoData />
-            )}
+            )} */}
 
             {/* Interests */}
             <HomeHeading title="Interests" />
-            {interestsLoading ? (
+            {/* {interestsLoading ? (
               <Loader />
             ) : interests.length > 0 ? (
               <InterestSection interests={interests} showHomeHeading={false} />
             ) : (
               <NoData />
-            )}
+            )} */}
           </div>
         </motion.section>
       </div>
