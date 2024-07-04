@@ -22,6 +22,30 @@ const Certificate = [
         credential_id: "24147172CA87",
         created_at: "3 Jul 2024",
         updated_at: "3 Jul 2024",
+    },
+    {
+        id: "3",
+        title: "Solidity Smart Contracts: Build DApps In Ethereum Blockchain Get certificate",
+        slug: "Solidity Smart Contracts: Build DApps In Ethereum Blockchain Get certificate",
+        organization: "Solidity Smart Contracts",
+        image: '/images/Certificates/EthereumDApp.jfif',
+        issue_date: "3 Feb 2017",
+        expiration_date: "Does not expire",
+        credential_id: "4S59172CD9A",
+        created_at: "3 Jul 2024",
+        updated_at: "3 Jul 2024",
+    },
+    {
+        id: "4",
+        title: "OpenJS Node.js Application Developer (JSNAD): The OpenJS Node.js Application Developer's guide",
+        slug: "OpenJS Node.js Application Developer (JSNAD): The OpenJS Node.js Application Developer's guide",
+        organization: "OpenJS Node.js Application Developer (JSNAD)",
+        image: '/images/Certificates/OpenJS.jfif',
+        issue_date: "16 Feb 2018",
+        expiration_date: "Does not expire",
+        credential_id: "A328DC98Q",
+        created_at: "3 Jul 2024",
+        updated_at: "3 Jul 2024",
     }
 ];
 
