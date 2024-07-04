@@ -17,6 +17,24 @@ const Interest = [
         created_at: "3 Jul 2024",
         updated_at: "3 Jul 2024",
     },
+    {
+        id: 3,
+        slug: "Playing Guitar",
+        title: "Playing Guitar",
+        icon: '/images/Interests/PlayingGuitar.png',
+        order: 10,
+        created_at: "3 Jul 2024",
+        updated_at: "3 Jul 2024",
+    },
+    {
+        id: 4,
+        slug: "Playing Ping Pong",
+        title: "Playing Ping Pong",
+        icon: '/images/Interests/PingPong.svg',
+        order: 10,
+        created_at: "3 Jul 2024",
+        updated_at: "3 Jul 2024",
+    },
 ];
 
 export default Interest;
