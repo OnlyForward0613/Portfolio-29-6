@@ -12,7 +12,6 @@ import StaticPage from "@components/StaticPage"
 import {
   getAllExperiences,
   getAllEducations,
-  getAllSkills,
   getAllCertificates,
   getAllInterests,
 } from '@lib/backendAPI'
@@ -29,6 +28,7 @@ import Experience from "@content/Experience"
 import Skills from "@content/Skills"
 import Educations from "@content/Education"
 import Certificate from "@content/Certificates"
+import Interest from "@content/Interest"
 
 const SkillSection = dynamic(() => import('@components/Home/SkillSection'), {
   loading: () => <Loader />,
@@ -169,13 +169,13 @@ export default function About({
 
             {/* Interests */}
             <HomeHeading title="Interests" />
-            {/* {interestsLoading ? (
+            {interestsLoading ? (
               <Loader />
-            ) : interests.length > 0 ? (
-              <InterestSection interests={interests} showHomeHeading={false} />
+            ) : Interest.length > 0 ? (
+              <InterestSection interests={Interest} showHomeHeading={false} />
             ) : (
               <NoData />
-            )} */}
+            )}
           </div>
         </motion.section>
       </div>
