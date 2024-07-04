@@ -27,6 +27,7 @@ import { headingFromLeft } from '@content/FramerMotionVariants'
 import dynamic from 'next/dynamic'
 import Experience from "@content/Experience"
 import Skills from "@content/Skills"
+import Educations from "@content/Education"
 
 const SkillSection = dynamic(() => import('@components/Home/SkillSection'), {
   loading: () => <Loader />,
@@ -74,12 +75,6 @@ export default function About({
     setExperiencesLoading(false)
   }
 
-  const fetchSkills = async () => {
-    const skillsData: SkillType[] = await getAllSkills()
-    setSkills(skillsData)
-    setSkillsLoading(false)
-  }
-
   const fetchCertificates = async () => {
     const certificatesData: CertificateType[] = await getAllCertificates()
     setCertificates(certificatesData)
@@ -101,9 +96,12 @@ export default function About({
   useEffect(() => {
     fetchExperiences()
     fetchEducations()
-    fetchSkills()
     fetchCertificates()
     fetchInterests()
+    if(Experience.length) {
+      setExperiencesLoading(false);
+    }
+    if (Skills.length) setSkillsLoading(false);
   }, [])
 
   return (
@@ -148,13 +146,13 @@ export default function About({
 
             {/* Educations */}
             <HomeHeading title="Educations" />
-            {/* {educationsLoading ? (
+            {educationsLoading ? (
               <Loader />
-            ) : educations.length > 0 ? (
-              <Education educations={educations} showHomeHeading={false} />
+            ) : Educations.length > 0 ? (
+              <Education educations={Educations} showHomeHeading={false} />
             ) : (
               <NoData />
-            )} */}
+            )}
 
             {/* Certificates */}
             <HomeHeading title="Certificates" />
