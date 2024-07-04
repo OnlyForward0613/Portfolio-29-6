@@ -28,6 +28,7 @@ import dynamic from 'next/dynamic'
 import Experience from "@content/Experience"
 import Skills from "@content/Skills"
 import Educations from "@content/Education"
+import Certificate from "@content/Certificates"
 
 const SkillSection = dynamic(() => import('@components/Home/SkillSection'), {
   loading: () => <Loader />,
@@ -102,6 +103,8 @@ export default function About({
       setExperiencesLoading(false);
     }
     if (Skills.length) setSkillsLoading(false);
+    if (Educations.length) setEducationsLoading(false);
+    if (Certificate.length) setCertificatesLoading(false);
   }, [])
 
   return (
@@ -156,13 +159,13 @@ export default function About({
 
             {/* Certificates */}
             <HomeHeading title="Certificates" />
-            {/* {certificatesLoading ? (
+            {certificatesLoading ? (
               <Loader />
-            ) : certificates.length > 0 ? (
-              <Certificates certificates={certificates} showHomeHeading={false} />
+            ) : Certificate.length > 0 ? (
+              <Certificates certificates={Certificate} showHomeHeading={false} />
             ) : (
               <NoData />
-            )} */}
+            )}
 
             {/* Interests */}
             <HomeHeading title="Interests" />
