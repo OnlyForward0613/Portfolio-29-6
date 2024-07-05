@@ -1,12 +1,10 @@
 import { CodeSnippetType } from '@lib/types'
 import Image from 'next/image'
-import Link from 'next/link'
 import { AiFillEye, AiFillLike } from 'react-icons/ai'
 
 export default function SnippetCard({ code_snippet }: { code_snippet: CodeSnippetType }) {
   return (
-    <Link
-      href={`snippets/${code_snippet.slug}`}
+    <div
       title="View Code Snippet Details"
       className="w-full p-4 bg-white dark:bg-darkSecondary ring-1 hover:bg-darkWhite dark:hover:bg-darkFourth dark:hover:ring-[#555] ring-gray-300 hover:ring-gray-400 dark:ring-[#444] flex flex-col gap-2 rounded"
     >
@@ -54,6 +52,6 @@ export default function SnippetCard({ code_snippet }: { code_snippet: CodeSnippe
           <span className="text-sm text-gray-500">{code_snippet.total_likes}</span>
         </div>
       </div>
-    </Link>
+    </div>
   )
 }

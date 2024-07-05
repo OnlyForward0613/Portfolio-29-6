@@ -5,12 +5,9 @@ import AnimatedDiv from '@components/FramerMotion/AnimatedDiv'
 import PageTop from '@components/PageTop'
 import pageMeta from '@content/meta'
 import { useEffect, useState } from 'react'
-import { getAllCodeSnippets } from '@lib/backendAPI'
-import { CodeSnippetType } from '@lib/types'
 import Loader from '@components/Loader'
 import NoData from '@components/NoData'
 import dynamic from 'next/dynamic'
-import { useClientID } from '@context/clientIdContext'
 import CodeSnipsets from '@content/CodeSnipset'
 
 const SnippetCard = dynamic(() => import('@components/SnippetCard'), {
@@ -19,21 +16,9 @@ const SnippetCard = dynamic(() => import('@components/SnippetCard'), {
 
 export default function CodeSnippets() {
   const [isLoading, setIsLoading] = useState(true)
-  const [code_snippets, setCodeSnippets] = useState<CodeSnippetType[]>([])
-  const { clientID } = useClientID()
-
-  const fetchCodeSnippets = async () => {
-    if (!clientID) return
-    const code_snippetsData: CodeSnippetType[] = await getAllCodeSnippets(clientID)
-    setCodeSnippets(code_snippetsData)
-  }
 
   useEffect(() => {
-    const fetchData = async () => {
-      await Promise.all([fetchCodeSnippets()])
-      setIsLoading(false)
-    }
-    fetchData()
+    if (CodeSnipsets.length) setIsLoading(false);
   }, [])
 
   return (

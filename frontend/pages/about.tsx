@@ -2,19 +2,8 @@ import MDXContent from "@lib/MDXContent"
 import pageMeta from "@content/meta"
 import {
   PostType,
-  ExperienceType,
-  EducationType,
-  SkillType,
-  CertificateType,
-  InterestType,
 } from '@lib/types'
 import StaticPage from "@components/StaticPage"
-import {
-  getAllExperiences,
-  getAllEducations,
-  getAllCertificates,
-  getAllInterests,
-} from '@lib/backendAPI'
 import { useEffect, useState } from 'react'
 import { motion } from "framer-motion"
 import { FadeContainer } from "@content/FramerMotionVariants"
@@ -64,47 +53,14 @@ export default function About({
   const [certificatesLoading, setCertificatesLoading] = useState(true)
   const [interestsLoading, setInterestsLoading] = useState(true)
 
-  const [experiences, setExperiences] = useState<ExperienceType[]>([])
-  const [skills, setSkills] = useState<SkillType[]>([])
-  const [educations, setEducations] = useState<EducationType[]>([])
-  const [certificates, setCertificates] = useState<CertificateType[]>([])
-  const [interests, setInterests] = useState<InterestType[]>([])
-
-  const fetchExperiences = async () => {
-    const experiencesData: ExperienceType[] = await getAllExperiences()
-    setExperiences(experiencesData)
-    setExperiencesLoading(false)
-  }
-
-  const fetchCertificates = async () => {
-    const certificatesData: CertificateType[] = await getAllCertificates()
-    setCertificates(certificatesData)
-    setCertificatesLoading(false)
-  }
-
-  const fetchInterests = async () => {
-    const interestsData = await getAllInterests()
-    setInterests(interestsData)
-    setInterestsLoading(false)
-  }
-
-  const fetchEducations = async () => {
-    const educationsData: EducationType[] = await getAllEducations()
-    setEducations(educationsData)
-    setEducationsLoading(false)
-  }
-
   useEffect(() => {
-    fetchExperiences()
-    fetchEducations()
-    fetchCertificates()
-    fetchInterests()
     if(Experience.length) {
       setExperiencesLoading(false);
     }
     if (Skills.length) setSkillsLoading(false);
     if (Educations.length) setEducationsLoading(false);
     if (Certificate.length) setCertificatesLoading(false);
+    if (Interest.length) setInterestsLoading(false)
   }, [])
 
   return (
