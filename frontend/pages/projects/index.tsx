@@ -9,6 +9,7 @@ import NoData from "@components/NoData"
 import Metadata from '@components/MetaData'
 import pageMeta from '@content/meta'
 import dynamic from 'next/dynamic'
+import Project from '@content/Project'
 
 const ProjectSection = dynamic(() => import('@components/ProjectSection'), {
   loading: () => <Loader />,
@@ -45,7 +46,7 @@ export default function Projects() {
       />
       {isLoading ? (
         <Loader />
-      ) : projects.length > 0 ? (
+      ) : Project.length > 0 ? (
         <div className="relative max-w-4xl mx-auto bg-darkWhitePrimary dark:bg-darkPrimary dark:text-gray-100 2xl:max-w-5xl 3xl:max-w-7xl">
           <motion.section
             initial="hidden"
@@ -55,7 +56,7 @@ export default function Projects() {
             className="grid min-h-screen py-20 place-content-center"
           >
             <div>
-              <ProjectSection projects={projects} />
+              <ProjectSection projects={Project} />
             </div>
           </motion.section>
         </div>
