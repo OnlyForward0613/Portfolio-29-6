@@ -13,6 +13,7 @@ import Loader from '@components/Loader'
 import NoData from '@components/NoData'
 import dynamic from 'next/dynamic'
 import { useClientID } from '@context/clientIdContext'
+import Blogs from '@content/Blogs'
 
 const Blog = dynamic(() => import('@components/Blog'), {
   loading: () => <Loader />,
