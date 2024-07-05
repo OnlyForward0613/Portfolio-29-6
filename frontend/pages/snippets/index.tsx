@@ -11,6 +11,7 @@ import Loader from '@components/Loader'
 import NoData from '@components/NoData'
 import dynamic from 'next/dynamic'
 import { useClientID } from '@context/clientIdContext'
+import CodeSnipsets from '@content/CodeSnipset'
 
 const SnippetCard = dynamic(() => import('@components/SnippetCard'), {
   loading: () => <Loader />,
@@ -46,14 +47,14 @@ export default function CodeSnippets() {
 
       {isLoading ? (
         <Loader />
-      ) : code_snippets.length > 0 ? (
+      ) : CodeSnipsets.length > 0 ? (
         <section className="pageTop flex flex-col gap-2 bg-darkWhitePrimary dark:bg-darkPrimary">
           <PageTop pageTitle={pageMeta.snippets.title}>{pageMeta.snippets.description}</PageTop>
 
           <section className="relative flex flex-col gap-2 min-h-[50vh]">
             <AnimatedDiv variants={FadeContainer} className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
               <AnimatePresence>
-                {code_snippets.map((code_snippet, index) => {
+                {CodeSnipsets.map((code_snippet, index) => {
                   return <SnippetCard key={index} code_snippet={code_snippet} />
                 })}
               </AnimatePresence>
