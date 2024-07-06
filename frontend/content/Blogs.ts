@@ -24,23 +24,38 @@ const BlogsData = [
         tags: "Blockchain, blockchain node, block, smart contract, dApp, stakeholders, private blockchain, public blockchain, hybrid blockchain, Layer1 blockchain, Layer2 blockchain",
         status: "Blockchain",
         order: 1,
-        // table_of_contents: [
-        //     {
-        //         id: 1,
-        //         level: 1,
-        //         heading: "What is a blockchain?"
-        //     },
-        //     {
-        //         id: 2,
-        //         level: 1,
-        //         heading: "What is a blockchain node?"
-        //     },
-        //     {
-        //         id: 3,
-        //         level: 1,
-        //         heading: "What is a block?"
-        //     }
-        // ],
+        table_of_contents: [
+            {
+                id: "1",
+                level: 1,
+                heading: "What is a blockchain?"
+            },
+            {
+                id: "2",
+                level: 1,
+                heading: "What is a blockchain node?"
+            },
+            {
+                id: "3",
+                level: 1,
+                heading: "What is a block?"
+            },
+            {
+                id: "4",
+                level: 1,
+                heading: "What is a smart contract?"
+            },
+            {
+                id: "5",
+                level: 1,
+                heading: "What is a decentralized application (dApp)?"
+            },
+            {
+                id: "6",
+                level: 1,
+                heading: "Who are the key stakeholders of a blockchain?"
+            },
+        ],
         total_views: 1204,
         total_likes: 1102,
         user_liked: true,
