@@ -8,11 +8,9 @@ import PageTop from '@components/PageTop'
 import pageMeta from '@content/meta'
 import { BlogType } from '@lib/types'
 import { CgSearch } from 'react-icons/cg'
-import { getAllBlogs } from '@lib/backendAPI'
 import Loader from '@components/Loader'
 import NoData from '@components/NoData'
 import dynamic from 'next/dynamic'
-import { useClientID } from '@context/clientIdContext'
 import BlogsData from '@content/Blogs'
 
 const Blog = dynamic(() => import('@components/Blog'), {
@@ -21,22 +19,9 @@ const Blog = dynamic(() => import('@components/Blog'), {
 
 export default function Blogs() {
   const [isLoading, setIsLoading] = useState(true)
-  const { clientID } = useClientID()
-
-  const [blogs, setBlogs] = useState([])
-
-  const fetchBlogs = async () => {
-    if (!clientID) return
-    const blogsData = await getAllBlogs(clientID)
-    setBlogs(blogsData)
-  }
 
   useEffect(() => {
-    const fetchData = async () => {
-      await Promise.all([fetchBlogs()])
-      setIsLoading(false)
-    }
-    fetchData()
+    if (BlogsData.length) setIsLoading(false);
   }, [])
 
   const [searchValue, setSearchValue] = useState('')
