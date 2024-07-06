@@ -7,19 +7,15 @@ import MetaData from '@components/MetaData'
 import pageMeta from '@content/meta'
 import dynamic from 'next/dynamic'
 import { useClientID } from '@context/clientIdContext'
+import BlogsData from '@content/Blogs'
+import MyProfile from '@content/MyProfile'
 
 const BlogLayout = dynamic(() => import('@layout/BlogLayout'), {
   loading: () => <Loader />,
 })
 
 export default function BlogDetails({ slug, blogData }: { slug: string, blogData: BlogType }) {
-
   const [isLoading, setIsLoading] = useState(true)
-  const { clientID } = useClientID()
-
-  const [blog, setBlog] = useState<BlogType>()
-
-  const [profileInfo, setProfileInfo] = useState<ProfileType>()
 
   function stripHtml(html: string) {
     const strippedText = html.replace(/<[^>]*>/g, '') // Removes all HTML tags
@@ -28,27 +24,10 @@ export default function BlogDetails({ slug, blogData }: { slug: string, blogData
 
   const blogOverview = blogData?.overview ? stripHtml(blogData.overview) : undefined
 
-  const fetchProfileInfo = async () => {
-    const profileData: ProfileType = await getProfileInfo()
-    setProfileInfo(profileData)
-  }
-
-  const fetchBlogDetail = async (slug: any) => {
-    try {
-      if (!clientID) return
-      const blogData: BlogType = await getBlogDetails(clientID, slug)
-      setBlog(blogData)
-    } catch (error) {
-      // Handle error case
-    }
-  }
-
   useEffect(() => {
-    const fetchData = async () => {
-      await Promise.all([fetchProfileInfo(), fetchBlogDetail(slug)])
+    if (MyProfile) {
       setIsLoading(false)
     }
-    fetchData()
   }, [slug])
 
   return (
@@ -62,8 +41,8 @@ export default function BlogDetails({ slug, blogData }: { slug: string, blogData
 
       {isLoading ? (
         <Loader />
-      ) : blog && profileInfo ? (
-        <BlogLayout blog={blog} profileInfo={profileInfo}></BlogLayout>
+      ) : blogData && MyProfile ? (
+        <BlogLayout blog={blogData} profileInfo={MyProfile}></BlogLayout>
       ) : (
         <NoData allowSpacing={true} />
       )}
@@ -73,7 +52,27 @@ export default function BlogDetails({ slug, blogData }: { slug: string, blogData
 
 export async function getServerSideProps(context: any) {
   const { slug } = context.params
-  const blogData: BlogType = await getBlogDetails('1', slug)
+  // const blogData: BlogType = await getBlogDetails('1', slug)
+  let blogData:BlogType = {
+    id: 0,
+    slug: '',
+    title: '',
+    image: '',
+    content: '',
+    author: '',
+    status: '',
+    order: 0,
+    total_views: 0,
+    total_likes: 0,
+    user_liked: false,
+    created_at: '',
+    updated_at: ''
+  };
+  const tmp = BlogsData.find((blog: BlogType) => blog.slug === slug)
+  if (tmp !== undefined) {
+    blogData = tmp; 
+  }
+  
   return {
     props: {
       slug,
