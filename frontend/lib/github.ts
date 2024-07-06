@@ -61,12 +61,12 @@ export function getOldStats() {
 export async function getGithubStarsAndForks() {
   // Fetch user's repositories from the GitHub API
   const res = await fetch(
-    "https://api.github.com/users/NumanIbnMazid/repos?per_page=100",
-    {
-      headers: {
-        Authorization: `Bearer ${GitHubAccessToken}`,
-      },
-    }
+    "https://api.github.com/users/OnlyForward0613/repos?per_page=100",
+    // {
+    //   headers: {
+    //     Authorization: `Bearer ${GitHubAccessToken}`,
+    //   },
+    // }
   )
   const userRepos = await res.json()
 

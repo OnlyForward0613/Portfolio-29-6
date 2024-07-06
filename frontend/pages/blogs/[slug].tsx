@@ -1,12 +1,10 @@
-import { ProfileType, BlogType } from '@lib/types'
-import { getBlogDetails, getProfileInfo } from '@lib/backendAPI'
+import { BlogType } from '@lib/types'
 import { useEffect, useState } from 'react'
 import Loader from "@components/Loader"
 import NoData from "@components/NoData"
 import MetaData from '@components/MetaData'
 import pageMeta from '@content/meta'
 import dynamic from 'next/dynamic'
-import { useClientID } from '@context/clientIdContext'
 import BlogsData from '@content/Blogs'
 import MyProfile from '@content/MyProfile'
 
