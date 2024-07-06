@@ -1,4 +1,4 @@
-const Blogs = [
+const BlogsData = [
     {
         id: 1,
         slug: "Blog1",
@@ -45,7 +45,7 @@ const Blogs = [
         slug: "Blog2",
         title: "A Simple Guide to Understanding Blockchain",
         // category: BlogCategoryType,
-        image: "/images/blogs/blog1.webp",
+        image: "/images/blogs/blog.png",
         overview: "You are in a grocery store and scan the QR code on your favorite coffee. You can view the details of where the coffee beans grew, cleaned, triaged, processed, and then roasted. what-if you can trace the supply and distribution to know the means of transport and how long it took to arrive at the store and so forth",
         content: `You are in a grocery store and scan the QR code on your favorite coffee. You can view the details of where the coffee beans grew, cleaned, triaged, processed, and then roasted. what-if you can trace the supply and distribution to know the means of transport and how long it took to arrive at the store and so forth`,
         author: "Davee Scott",
@@ -112,4 +112,4 @@ const Blogs = [
     }
 ];
 
-export default Blogs;
+export default BlogsData;

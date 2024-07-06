@@ -19,7 +19,7 @@ import { BsGithub, BsLinkedin, BsTwitter, BsFacebook } from 'react-icons/bs'
 import Loader from '@components/Loader'
 import NoData from "@components/NoData"
 import Experience from '@content/Experience';
-import Blogs from '@content/Blogs';
+import BlogsData from '@content/Blogs';
 import dynamic from 'next/dynamic'
 
 const ExperienceSection = dynamic(() => import('@components/Home/ExperienceSection'), {
@@ -48,7 +48,7 @@ export default function Home() {
 
   useEffect(() => {
     fetchProfileInfo()
-    if (Blogs.length) {
+    if (BlogsData.length) {
       setBlogsLoading(false);
     }
     if (Experience.length) {
@@ -221,8 +221,8 @@ export default function Home() {
           <HomeHeading title="Blogs" />
           {blogsLoading ? (
             <Loader />
-          ) : Blogs.length > 0 ? (
-            <BlogsSection blogs={Blogs} showHomeHeading={false} />
+          ) : BlogsData.length > 0 ? (
+            <BlogsSection blogs={BlogsData} showHomeHeading={false} />
           ) : (
             <NoData />
           )}

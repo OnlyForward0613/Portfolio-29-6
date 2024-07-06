@@ -13,7 +13,7 @@ import Loader from '@components/Loader'
 import NoData from '@components/NoData'
 import dynamic from 'next/dynamic'
 import { useClientID } from '@context/clientIdContext'
-import Blogs from '@content/Blogs'
+import BlogsData from '@content/Blogs'
 
 const Blog = dynamic(() => import('@components/Blog'), {
   loading: () => <Loader />,
@@ -40,14 +40,14 @@ export default function Blogs() {
   }, [])
 
   const [searchValue, setSearchValue] = useState('')
-  const [filteredBlogs, setFilteredBlogs] = useState([...blogs])
+  const [filteredBlogs, setFilteredBlogs] = useState([...BlogsData])
   const searchRef = useRef<HTMLInputElement>(null!)
 
   useEffect(() => {
     setFilteredBlogs(
-      blogs.filter((post: BlogType) => post.title.toLowerCase().includes(searchValue.trim().toLowerCase()))
+      BlogsData.filter((post: BlogType) => post.title.toLowerCase().includes(searchValue.trim().toLowerCase()))
     )
-  }, [searchValue, blogs])
+  }, [searchValue, BlogsData])
 
   function handleAutoSearch(e: any) {
     if (e.code === 'Slash' && e.ctrlKey) {
@@ -72,12 +72,12 @@ export default function Blogs() {
 
       {isLoading ? (
         <Loader />
-      ) : blogs.length > 0 ? (
+      ) : BlogsData.length > 0 ? (
         <section className="pageTop flex flex-col gap-2 bg-darkWhitePrimary dark:bg-darkPrimary">
           <PageTop pageTitle="Blogs">
             Welcome to my blog page! Here, you will find a collection of insightful and informative articles that I
             have written on various topics. As a passionate writer and avid learner, I believe in the power of sharing
-            knowledge and experiences through the written word. Till now, I've written {blogs.length} articles.
+            knowledge and experiences through the written word. Till now, I've written {BlogsData.length} articles.
           </PageTop>
 
           <AnimatedDiv
