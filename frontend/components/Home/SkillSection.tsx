@@ -23,11 +23,11 @@ export default function SkillSection({ skills, showHomeHeading = true }: { skill
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 my-10">
           {skills.map((skill: SkillType, index) => {
-            const level = Number(skill.level) || 0 // Convert level to a number or use 0 if it's null or invalid
-            const progressPercentage = (level / 5) * 100 // Calculate the progress percentage
-            const progressBarStyle = {
-              width: `${progressPercentage}%`,
-            }
+            // const level = Number(skill.level) || 0 // Convert level to a number or use 0 if it's null or invalid
+            // const progressPercentage = (level / 5) * 100 // Calculate the progress percentage
+            // const progressBarStyle = {
+            //   width: `${progressPercentage}%`,
+            // }
 
             return (
               <motion.div
