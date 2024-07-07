@@ -1,9 +1,7 @@
 import React from "react"
 import { motion } from "framer-motion"
 import { FadeContainer } from "@content/FramerMotionVariants"
-import { ProjectType } from "@lib/types"
 import { useEffect, useState } from "react"
-import { getAllProjects } from "@lib/backendAPI"
 import Loader from "@components/Loader"
 import NoData from "@components/NoData"
 import Metadata from '@components/MetaData'
@@ -19,21 +17,8 @@ const ProjectSection = dynamic(() => import('@components/ProjectSection'), {
 export default function Projects() {
   const [isLoading, setIsLoading] = useState(true)
 
-  const [projects, setProjects] = useState<ProjectType[]>([])
-
-  const fetchProjects = async () => {
-    const projectsData: ProjectType[] = await getAllProjects()
-    setProjects(projectsData)
-  }
-
   useEffect(() => {
-    const fetchData = async () => {
-      await Promise.all([
-        fetchProjects()
-      ]);
-      setIsLoading(false)
-    }
-    fetchData()
+    if (Project.length) setIsLoading(false)
   }, [])
 
   return (
