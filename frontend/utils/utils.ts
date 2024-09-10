@@ -1,4 +1,4 @@
-import myImage from "/public/images/davee.jpg"
+import myImage from "/public/images/DV2.jpg"
 
 export const AvatarImage: string = "/public/images/davee.jpg"
 export const homeProfileImage = myImage

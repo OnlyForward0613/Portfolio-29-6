@@ -125,7 +125,7 @@ export default function Home() {
                 className="text-[#474747] dark:text-gray-300 font-small font-light text-sm md:text-base text-center"
               >
                 {/* Address */}
-                <div>Address: {'MD, Brandwine, USA'}</div>
+                <div>Address: {'MD, Brandywine, USA'}</div>
                 {/* Email */}
                 <div className="mt-2">
                   <span>Email: </span>
@@ -140,7 +140,7 @@ export default function Home() {
                   <span>Contact: </span>
                   <span className="text-sky-800 dark:text-sky-400">
                     <a href={`tel:${profileInfo?.contact || '+1 5752238602'}`}>
-                      {profileInfo?.contact || '+1 5752238602'}
+                      {profileInfo?.contact || '+1 240 685 1440'}
                     </a>
                   </span>
                 </div>
@@ -195,7 +195,7 @@ export default function Home() {
 
             {/* Resume Download Button */}
               <Link
-                href={'https://drive.google.com/file/d/1gE0HAqNyah08KKyNlPji0PeAusMRFe4Y/view?usp=sharing'}
+                href={'https://drive.google.com/file/d/1ECsFm-j_q6U6tQ8Qt1EsqjhaI-1qQWWA/view?usp=drive_link'}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-5 py-2 transition-transform border border-gray-500 rounded-md outline-none select-none dark:border-gray-400 hover:bg-white dark:hover:bg-neutral-800 active:scale-95"
