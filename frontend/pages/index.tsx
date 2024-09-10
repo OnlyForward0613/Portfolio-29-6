@@ -61,7 +61,7 @@ export default function Home() {
   return (
     <>
       <Metadata
-        title="Davee Scott's Portfolio"
+        title="Sr Developer"
         description={pageMeta.home.description}
         previewImage={pageMeta.home.image}
         keywords={pageMeta.home.keywords}

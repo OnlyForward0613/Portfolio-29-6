@@ -3,10 +3,10 @@
 Welcome to my Portfolio Application! This is a comprehensive portfolio application showcasing my professional experiences, projects, skills, blogs, media, interests, and more.
 
 ## Website URL
-[https://daveescott0509.com/](https://daveescott0509.com/)
+[https://portfolio-29-6.vercel.app/](https://portfolio-29-6.vercel.app/)
 
 ## Table of Contents
-- [daveescott0509.com](#daveescott0509com)
+- [https://portfolio-29-6.vercel.app/](#Davee Scott Portfolio)
   - [Website URL](#website-url)
   - [Table of Contents](#table-of-contents)
   - [About](#about)
@@ -40,7 +40,7 @@ The **Stats** page presents statistics relevant to my professional profile, such
 The **Contact** page offers a means to get in touch with me. Whether you're interested in collaborating on a project, have a question, or just want to say hello, feel free to reach out!
 
 ## Get in Touch
-- Website: [daveescott0509.com](https://daveescott0509.com/)
+- Website: [Davee's portfolio](https://portfolio-29-6.vercel.app/)
 - GitHub: [github.com/OnlyForward0613](https://github.com/OnlyForward0613/)
 - Email: [daveescott0509@gmail.com](mailto:daveescott0509@gmail.com)
 - Linkedin: [Davee Scott](https://www.linkedin.com/in/davee-scott).

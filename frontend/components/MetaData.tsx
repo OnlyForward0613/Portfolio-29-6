@@ -39,7 +39,7 @@ export default function MetaData({
       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="description" content={description || "Davee Scott's Portfolio Web Application"} />
-      <title>{title + (suffix ? ` - ${suffix}` : '') + ' | daveescott0509'}</title>
+      <title>{title + (suffix ? ` - ${suffix}` : '') + ' | Mr Davee'}</title>
       <meta name="theme-color" content="#000" />
       <link rel="shortcut icon" href={faviconHref} sizes="any" />
       <link rel="manifest" href="/manifest.json" />
