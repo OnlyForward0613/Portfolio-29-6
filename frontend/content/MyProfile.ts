@@ -16,7 +16,7 @@ const MyProfile = {
     address: "12900 East Shelby Lane",
     about: "string",
     is_portfolio_user: "string",
-    resume_link: "https://drive.google.com/file/d/1gE0HAqNyah08KKyNlPji0PeAusMRFe4Y/view?usp=sharing",
+    resume_link: "https://drive.google.com/file/d/1ECsFm-j_q6U6tQ8Qt1EsqjhaI-1qQWWA/view?usp=drive_link",
     is_active: "string",
     is_staff: "string",
     is_superuser: "string",
